@@ -1,0 +1,205 @@
+.lista {
+    width: 85%;
+    height: 716px;
+    color: white;
+    background-color: #300518;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.lista div  {
+    border-bottom: #fff solid 1px;
+    height: 100px;
+    width: 1400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lista div   {
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+button /*#lapis*/ {
+    width: 3%;
+     background-color: transparent;/* Cor de fundo */
+    color: transparent; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 15px 32px; /* Espaçamento interno (vertical e horizontal) */
+    text-align: center; /* Alinha o texto no centro */
+    text-decoration: none; /* Remove qualquer sublinhado */
+    display: inline-block; /* Exibe como elemento de bloco, mas na mesma linha */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor como uma mãozinha */
+    border-radius: 8px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Efeito de transição suave na cor de fundo */
+}
+
+.lapis1{
+    width: 35px;
+    height: 35px;
+}
+
+.lixo {
+    width: 6%;
+    flex-direction: column;
+    background-color: transparent; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    /* Espaçamento interno (vertical e horizontal) */
+    text-align: center; /* Alinha o texto no centro */
+    text-decoration: none; /* Remove qualquer sublinhado */
+    display: inline-block; /* Exibe como elemento de bloco, mas na mesma linha */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor como uma mãozinha */
+    border-radius: 8px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Efeito de transição suave na cor de fundo */
+    
+}
+
+
+
+.lixo1{
+    width: 35px;
+    height: 35px;
+
+}
+
+.alt {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 70px; /* Adiciona um espaço entre os itens */
+   margin-top: -680px;
+   margin-right: 12%;
+}
+
+.modal {
+    display: none; /* O modal começa escondido */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica acima de outros conteúdos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar os limites */
+}
+
+.modal.active {
+    display: flex; /* Exibe o modal quando ativo */
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    background-color: #927575;
+    margin: 10% auto ; /* Centraliza o modal na tela */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Largura do modal */
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Botão de Fechar */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+#fechar {
+    position: fixed;   /* Fixa o botão na tela */
+    right: 480px;       /* Distância da borda direita */
+    bottom: 210px;      /* Distância da borda inferior */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #250F1B; /* Cor de fundo do botão */
+    color: white;      /* Cor do texto */
+    border: none;      /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px;    /* Tamanho da fonte */
+    cursor: pointer;   /* Cursor de mão ao passar por cima */
+}
+
+#fechar:hover {
+    background-color: #31222a;/* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+/* Quando o mouse passa sobre o botão de fechar */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Espaço reservado para a imagem */
+.image-container {
+    border: 2px dashed #000000; /* Linhas pontilhadas para mostrar o espaço reservado */
+    width: 300px;
+    height: 300px;
+    margin-right: 650px;
+    margin-top: 80px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed; */
+    
+  }
+  
+  #imagePlaceholder {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+    
+  }
+
+  #imageInput {
+    margin-right: 845px;
+    margin-top: 400px;
+    display: flex;
+    position: absolute;
+    width: 110px;
+  }
+  
+  #imageStatus {
+    font-size: 16px;
+    color: #000000;
+    position: static;
+  }
+
+#myForm{
+    /* background: #cf0; */
+    margin-right: 200px;
+    position: absolute;
+    margin-top: 100px;
+    
+}
+
+label[for="name"] {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+    position: sticky;
+    margin-right: 100px;
+  }
+
+  #nome {
+    /* background: #3b0; */
+    width: 300px;
+    height: 30px;
+    margin-left: -80px;
+    font-size: 25px;
+  }
+

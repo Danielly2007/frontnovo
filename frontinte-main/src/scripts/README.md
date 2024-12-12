@@ -1,0 +1,3 @@
+aqui deve ficar todos os aquivos .js, e seu nome precisa ser conforme a sua funcionalidade
+
+coloque o nome conforme funcionalidade...
